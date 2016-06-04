@@ -1,3 +1,4 @@
+library(data.table)
 DT <- fread('household_power_consumption.txt', 
             na.strings='?')
 DT2 <- subset(DT, DT$Date == '2/2/2007' | DT$Date== '1/2/2007')
